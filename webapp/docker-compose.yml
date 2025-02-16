@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  webapp:
+    image: webapp:latest
+    ports:
+      - "9900:9900"
+    restart: unless-stopped
