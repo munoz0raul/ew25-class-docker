@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  webapp-led:
+    image: webapp-led:latest
+    ports:
+      - "9900:9900"
+    volumes:
+      - /var/rootdirs/home/fio/home/:/home/:rw
+    restart: unless-stopped
